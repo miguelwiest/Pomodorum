@@ -56,7 +56,8 @@ export default {
 				redirect_uri: '/',
 			},
 			google: {
-				client_id: '',
+				client_id: '943391284174-pasv0bv2d4e77duvkpklgvpce66k5fmm.apps.googleusercontent.com',
+				client_secret: 'm-d4BJMJMAThKfMm0miTjDr1',
 				user: false,
 				redirect_uri: '/',
 
@@ -64,6 +65,7 @@ export default {
 			github: {
 				client_id: 'e5d2de184719c249c9a3',
 				client_secret: 'e78e6a51d440d6f5b1be5278dfa31c14b7a807df',
+				redirect_uri: '/',
 			},
 		},
 		redirect: {
