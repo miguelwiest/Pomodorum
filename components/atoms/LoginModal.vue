@@ -113,7 +113,7 @@
 								class="
 								h-6
 								w-6"
-								alt="google-Logo"
+								alt="facebook-Logo"
 							>
 						</div>
 						Sign in with Facebook
@@ -145,7 +145,7 @@
 								class="
 								h-6
 								w-6"
-								alt="google-Logo"
+								alt="github-Logo"
 							>
 						</div>
 						Sign in with Github

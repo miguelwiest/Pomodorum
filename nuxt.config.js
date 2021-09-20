@@ -62,8 +62,8 @@ export default {
 
 			},
 			github: {
-				client_id: '',
-				client_secret: '',
+				client_id: 'e5d2de184719c249c9a3',
+				client_secret: 'e78e6a51d440d6f5b1be5278dfa31c14b7a807df',
 			},
 		},
 		redirect: {
