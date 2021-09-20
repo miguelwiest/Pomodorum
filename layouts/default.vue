@@ -15,7 +15,21 @@
 			space-between"
 		>
 			<ToggleTheme />
-			<LoginModal />
+			<div v-if="$auth.loggedIn">
+				{{ $auth.user.email }}
+				<button>Logout</button>
+			</div>
+			<div v-else class="flex">
+				<NuxtLink to="/login" class="mr-2">
+					Login
+				</NuxtLink>
+				<span>
+					/
+				</span>
+				<NuxtLink to="/register" class="ml-2">
+					Register
+				</NuxtLink>
+			</div>
 		</header>
 		<Nuxt />
 	</div>
@@ -24,13 +38,11 @@
 <script lang="ts">
 import Vue from 'vue';
 import ToggleTheme from '~/components/atoms/ToggleTheme.vue';
-import LoginModal from '~/components/atoms/LoginModal.vue';
 
 export default Vue.extend({
 	name: 'Default',
 	components: {
 		ToggleTheme,
-		LoginModal,
 	},
 });
 </script>
