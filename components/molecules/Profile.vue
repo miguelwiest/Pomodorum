@@ -4,7 +4,7 @@
 		items-center"
 	>
 		<img
-			src="https://github.com/miguelwiest.png"
+			:src="$nuxt.$fire.auth.currentUser.photoURL"
 			alt="Perfil"
 			class="mr-6
 			w-20
@@ -23,7 +23,7 @@
 				profile-dark"
 				:style="{transition: 'background 0.7s ease, color 0.7s ease'}"
 			>
-				Miguel Wiest
+				{{$nuxt.$fire.auth.currentUser.displayName}}
 			</strong>
 
 			<p
