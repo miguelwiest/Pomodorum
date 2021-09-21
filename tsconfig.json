@@ -28,7 +28,7 @@
       "@types/node",
 			"@types/jest",
 			"@nuxtjs/color-mode",
-			"@nuxtjs/auth-next",
+			"@nuxtjs/firebase"
 		],
   },
   "exclude": [

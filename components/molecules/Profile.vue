@@ -41,8 +41,14 @@
 <script lang="ts">
 import Vue from 'vue';
 import { mapState } from 'vuex';
+import axios from 'axios';
 
 export default Vue.extend({
+	data () {
+		return {
+			selectedFile: null
+		}
+	},
 	computed: mapState('Challenges', ['level']),
 });
 </script>
