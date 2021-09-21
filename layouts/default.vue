@@ -15,20 +15,22 @@
 			space-between"
 		>
 			<ToggleTheme />
-			<div v-if="$auth.loggedIn">
-				{{ $auth.user.email }}
-				<button>Logout</button>
-			</div>
-			<div v-else class="flex">
-				<NuxtLink to="/login" class="mr-2">
+			<div class="flex">
+				<NuxtLink to="/" class="mr-6">
+					Home
+				</NuxtLink>
+				<NuxtLink to="/auth/signin" class="mr-2">
 					Login
 				</NuxtLink>
 				<span>
 					/
 				</span>
-				<NuxtLink to="/register" class="ml-2">
+				<NuxtLink to="/auth/register" class="ml-2">
 					Register
 				</NuxtLink>
+			</div>
+			<div>
+				<NuxtLink to="/auth/signout" class="ml-6">Logout</NuxtLink>
 			</div>
 		</header>
 		<Nuxt />

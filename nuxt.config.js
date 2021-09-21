@@ -37,45 +37,50 @@ export default {
 		'@nuxt/typescript-build',
 		// https://go.nuxtjs.dev/tailwindcss
 		'@nuxtjs/tailwindcss',
+		'@nuxtjs/vuetify',
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
 		['cookie-universal-nuxt', { alias: 'cookiz' }],
 		'@nuxtjs/axios',
-		'@nuxtjs/auth-next',
-		'@nuxtjs/toast',
+		[
+			'@nuxtjs/firebase',
+			{
+				config: {
+					apiKey: "AIzaSyC6rltyuT2skCBUvpNe7CeogNSc2j_03uc",
+					authDomain: "pomodorum-f33f2.firebaseapp.com",
+					projectId: "pomodorum-f33f2",
+					storageBucket: "pomodorum-f33f2.appspot.com",
+					messagingSenderId: "313893709408",
+					appId: "1:313893709408:web:a47a9c530b499a360b4505",
+					measurementId: "G-ZQQNN3JEHM"
+				},
+				services: {
+					auth: {
+						persistence: 'local', // default
+						initialize: {
+							onAuthStateChangedAction: 'onAuthStateChangedAction',
+							subscribeManually: false,
+						},
+						ssr: false,
+					},
+				},
+			},
+		],
 	],
 
-	auth: {
-		strategies: {
-			facebook: {
-				client_id: '',
-				userinfo_endpoint: false,
-				scope: ['public_profile', 'email'],
-				redirect_uri: '/',
-			},
-			google: {
-				client_id: '943391284174-pasv0bv2d4e77duvkpklgvpce66k5fmm.apps.googleusercontent.com',
-				client_secret: 'm-d4BJMJMAThKfMm0miTjDr1',
-				user: false,
-				redirect_uri: '/',
-
-			},
-			github: {
-				client_id: 'e5d2de184719c249c9a3',
-				client_secret: 'e78e6a51d440d6f5b1be5278dfa31c14b7a807df',
-				redirect_uri: '/',
-			},
-		},
-		redirect: {
-			login: '/',
-			logout: '/',
-		},
+	database: {
+		emulatorPort: 9000,
+		emulatorHost: 'localhost',
 	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
+	},
+
+	router: {
+		middleware: ['auth']
 	},
 
 	tailwindcss: {
