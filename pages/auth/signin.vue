@@ -12,9 +12,8 @@
 						depressed
 						large
 					>
-						<v-icon color="red" large>
-							mdi-google
-						</v-icon>Login with Google
+						<img src="~/static/icons/Google__G__Logo.svg" alt="icon_google"/>
+						Login with Google
 					</v-btn>
 					<v-btn
 						class="login-button my-2 pa-2"
@@ -23,9 +22,8 @@
 						depressed
 						large
 					>
-						<v-icon color="black" large>
-							mdi-github
-						</v-icon>Login with Github
+						<img src="~/static/icons/icons8-github.svg" alt="icon_github"/>
+						Login with Github
 					</v-btn>
 					<v-btn
 						class="login-button my-2 pa-2"
@@ -34,9 +32,8 @@
 						depressed
 						large
 					>
-						<v-icon color="ble" large>
-							mdi-facebook
-						</v-icon>Login with Facebook
+						<img src="~/static/icons/icons8-facebook.svg" alt="icon_facebook"/>
+						Login with Facebook
 					</v-btn>
 				</v-card-text>
 			</v-card>
