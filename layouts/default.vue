@@ -16,21 +16,11 @@
 		>
 			<ToggleTheme />
 			<div class="flex">
-				<NuxtLink to="/" class="mr-6">
-					Home
-				</NuxtLink>
 				<NuxtLink to="/auth/signin" class="mr-2">
 					Login
 				</NuxtLink>
-				<span>
-					/
-				</span>
-				<NuxtLink to="/auth/register" class="ml-2">
-					Register
-				</NuxtLink>
-			</div>
-			<div>
-				<NuxtLink to="/auth/signout" class="ml-6">Logout</NuxtLink>
+				|
+				<NuxtLink to="/auth/signout" class="ml-2">Logout</NuxtLink>
 			</div>
 		</header>
 		<Nuxt />
