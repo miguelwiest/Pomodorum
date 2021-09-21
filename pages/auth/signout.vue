@@ -1,5 +1,7 @@
 <template>
-
+	<h1 class="login-darkMode">
+		You Already Logged Out
+	</h1>
 </template>
 
 <script>

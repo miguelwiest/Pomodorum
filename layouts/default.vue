@@ -17,6 +17,7 @@
 			<ToggleTheme />
 				<NuxtLink
 					to="/auth/signout"
+					class="login-darkMode"
 				>
 					Logout
 				</NuxtLink>
