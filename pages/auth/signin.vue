@@ -14,7 +14,7 @@
 					>
 						<v-icon color="red" large>
 							mdi-google
-						</v-icon>Login with Github
+						</v-icon>Login with Google
 					</v-btn>
 					<v-btn
 						class="login-button my-2 pa-2"
@@ -36,7 +36,7 @@
 					>
 						<v-icon color="ble" large>
 							mdi-facebook
-						</v-icon>Login with Github
+						</v-icon>Login with Facebook
 					</v-btn>
 				</v-card-text>
 			</v-card>
