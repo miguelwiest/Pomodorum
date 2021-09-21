@@ -15,13 +15,11 @@
 			space-between"
 		>
 			<ToggleTheme />
-			<div class="flex">
-				<NuxtLink to="/auth/signin" class="mr-2">
-					Login
+				<NuxtLink
+					to="/auth/signout"
+				>
+					Logout
 				</NuxtLink>
-				|
-				<NuxtLink to="/auth/signout" class="ml-2">Logout</NuxtLink>
-			</div>
 		</header>
 		<Nuxt />
 	</div>
