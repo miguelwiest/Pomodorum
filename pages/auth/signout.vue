@@ -1,5 +1,5 @@
 <template>
-	<h1 class="login-darkMode">
+	<h1 class="login-darkMode flex justify-center items-center">
 		You Already Logged Out
 	</h1>
 </template>
